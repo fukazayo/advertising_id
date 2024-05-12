@@ -1,6 +1,7 @@
 package com.os.operando.advertisingid
 
 import android.app.Activity
+import androidx.annotation.Keep
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.FlutterPlugin.FlutterPluginBinding
@@ -13,6 +14,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import kotlin.concurrent.thread
 
+@Keep
 class AdvertisingIdPlugin() : FlutterPlugin, ActivityAware, MethodCallHandler {
     private var activity: Activity? = null
 
